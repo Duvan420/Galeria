@@ -1,0 +1,337 @@
+.color1 {color: #55a386;}
+.color2 {color: #c1c99a;}
+.color3 {color: #000107;}
+.color4 {color: #747a75;}
+.color5 {color: #f8f8f8;}
+
+@font-face {
+    font-family: "YoungSerif";
+    src: url(/Fonts/YoungSerif-Regular.ttf);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c1c99a;
+}
+header{
+    width: 100%;
+}
+#contenedor{
+    width: 90%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*Diseño para celulares*/
+@media screen and (min-width: 280px){
+
+    body {  
+        font-family: sans-serif;
+    }
+
+    nav {   
+        background: #55a386;
+        padding: 5px 20px;
+        width: 100%;
+        border-bottom: 2px solid black;
+    }
+
+    ul {    
+        list-style-type: none;
+    }
+
+    a { 
+    color: black;
+    text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+    .Nombre{
+        order: 1;
+        margin-right: 30px;
+    }
+    .Nombre a{
+        font-weight: bolder;
+        color: black;
+    }
+    .Nombre a:hover {
+        text-decoration: none;
+    }
+    .Barra{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .Barra li {
+        font-size: 16px;
+        padding: 15px 5px;
+    }
+
+    .Nombre a, .toggle a {
+        font-size: 20px;
+    }
+
+    .button.secondary {
+        border-bottom: 1px #444 solid;
+    }
+    #menuButtons{
+        background: transparent;
+        background-image: url(/img/Menu\ Bars.png);
+        background-size: cover;
+        height: 20px;
+        width: 20px;
+        border: 0;
+    }
+    .Elemento{
+        width: 100%;
+        text-align: center;
+        order: 3;
+        display: none;
+        margin-right: 30px;
+    }
+    .Elemento.boton{
+        order: 2;
+    }
+    .Elemento.active{
+        display: block;
+    }
+    .BotonMenu{
+        margin-right: 50px;
+    }
+    .Titulo{
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 20px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    #contenedor2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #contenedor2 p{
+        margin: 20px;
+        text-align: center;
+    }
+    #contenedor2 iframe{
+        width: 80%;
+        margin: 30px;
+    }
+    .Galeria{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .Galeria img{
+        width: 90%;
+        margin-bottom: 30px;
+        border-radius: 20px;
+    }
+    .Galeria2{
+        width: 90%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .Galeria2 a{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .Galeria2 a p{
+        font-size: 22px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        letter-spacing: 3px;
+    }
+    .Galeria2 a img{
+        width: 90%;
+        margin: 30px;
+        border-radius: 20px;
+    }
+    .Acordeon{
+        width: 90%;
+        color: black;
+        background-color: white;
+    }
+    .Acordeon .SeccionAcordeon{
+        position: relative;
+        margin: 10px 10px;
+    }
+    .Acordeon .TituloAcordeon{
+        position: relative;
+        padding: 10px 0;
+        font-size: 30px;
+        color: black;
+        cursor: pointer;
+    }
+    .Acordeon .TituloAcordeon::before {
+        color: black;
+        position: absolute;
+        top: 50%;
+        right: -5px;
+        font-size: 30px;
+        transform: translateY(-50%);
+    }
+    .Acordeon .ContenidoAcordeon {
+        position: relative;
+        background: white;
+        font-size: 20px;
+        text-align: justify;
+        width: 80%px;
+        margin-bottom: 30px;
+    }
+    .Acordeon hr {
+        width: 100%;
+        margin-left: 0;
+        border: 2px solid grey;
+    }
+    #BotonRegistro{
+        margin: 30px;
+        padding: 20px;
+        background-color: #000107;
+        color: white;
+        border-radius: 20px;
+    }
+    #BotonRegistro:hover{
+        background-color: #747a75;
+        text-decoration: none;
+    }
+    #contenedor3{
+        background-color: white;
+        width: 60%;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    #contenedor3 div{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    #contenedor3 div label{
+        margin: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+    }
+    #contenedor3 div input{
+        border: 0;
+        background-color: transparent;
+        border-bottom: 2px solid black;
+        padding: 10px;
+    }
+}
+/*Estilo Tablet*/
+@media all and (min-width: 600px) {
+    .Barra {
+        justify-content: center;
+    }
+    .Nombre {
+        flex: 1;
+    }
+    .toggle {
+        flex: 1;
+        text-align: right;
+        order: 2;
+    }
+    .Elemento.boton {
+        width: 20%;
+        order: 1;
+        display: block;
+    }
+    .boton.secondary {
+        border: 0;
+    }
+    .boton a {
+        padding: 7.5px 15px;
+        background: #37312f;
+    }
+    .boton.secondary a {
+        background: transparent;
+    }
+    .boton a:hover {
+        text-decoration: none;
+    }
+    .boton.secondary a:hover {
+        color: #292929;
+        text-decoration: underline;
+    }
+}
+
+/*Estilo Computador*/
+@media all and (min-width: 900px) {
+    .Elemento {
+        display: block;
+        width: auto;
+    }
+    .BotonMenu {
+        display: none;
+    }
+    .Nombre {
+        order: 0;
+    }
+    .Elemento {
+        order: 1;
+    }
+    .boton {
+        order: 2;
+    }
+    .Barra li {
+        padding: 15px 10px;
+    }
+    .Barra li.boton {
+        padding-right: 0;
+    }
+    #contenedor{
+        width: 75%;
+    }
+    #contenedor2 iframe{
+        height: 300px;
+    }
+    .Galeria{
+        display: flex;
+        height: 20rem;
+        gap: 1rem;
+        margin: 50px;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .Galeria img{
+        flex: 1;
+        border-radius: 1rem;
+        width: 1px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        transition: all .9s cubic-bezier(.25, .4, .45, 1.4);
+    }
+    #contenedor3{
+        margin: 50px;
+        border-radius: 50px;
+        width: 40%;
+    }
+    #contenedor3 div label{
+        font-size: 20px;
+    }
+    #contenedor3 div input{
+        width: 70%;
+    }
+    #contenedor3 div input::placeholder{
+        opacity: 0;
+    }
+}
