@@ -85,7 +85,7 @@ header{
     }
     #menuButtons{
         background: transparent;
-        background-image: url(/img/Menu\ Bars.png);
+        background-image: url(../img/Menu\ Bars.png);
         background-size: cover;
         height: 20px;
         width: 20px;
